@@ -1,0 +1,213 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.heading {
+    background: linear-gradient( rgba(0, 39, 47, 0.8), rgba(0, 39, 47, 0.8)), url(../images/hero-river.png);
+    height: 100vh;
+    padding: 80px 95px 0;
+    background-size: cover;
+}
+.heading h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 98px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+}
+
+.logo {
+    background-image: url(../images/logo.svg);
+    height: 30px;
+    width: 185px;
+}
+
+section {
+    padding: 200px 15px 0;
+}
+
+section .section_number {
+    font-size: 16px;;
+    color: #9A9A9A
+}
+
+section div h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 86px;
+    font-weight: bold;
+}
+
+section div h3 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+section div p {
+    font-size: 18px;
+}
+
+section div img {
+    max-width: 100%;
+}
+
+section .line, section .line-small {
+    position: relative;
+}
+
+.line-container-one {
+    padding-left: 100px !important;
+}
+
+.line-container-two {
+    padding-left: 135px !important;
+}
+
+.line-container-three {
+    padding-left: 80px !important;
+}
+
+section .line::before {
+    border-bottom: 1px solid #000000;
+    width: 80px;
+    content: '';
+    position: absolute;
+    left: -110px;
+    top: 20px;
+}
+
+section .line-small::before {
+    border-bottom: 1px solid #000000;
+    width: 50px;
+    content: '';
+    position: absolute;
+    left: -70px;
+    top: 20px;
+}
+
+section div .button {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    color: #000;
+    width: 200px;
+    display: block;
+    margin-top: 100px;
+}
+
+section div .button:hover {
+    text-decoration: none;
+    border: 2px solid #000;
+}
+
+.booking-form .form-control {
+    font-size: 14px;
+}
+
+.booking-form textarea.form-control {
+    height: 120px;
+}
+
+.booking-form .vue__time-picker {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.booking-form .vue__time-picker input.display-time, .vdp-datepicker input {
+    width: 100%;
+    font-size: 14px;
+    height: 35px;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+}
+
+.booking-form .error {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+section.last-section {
+    padding-bottom: 110px;
+    margin-bottom: 30px;
+    background: url(../images/logo-cut.svg) no-repeat right bottom;;
+}
+
+section.last-section h4 {
+    font-size: 18px;
+}
+
+section.last-section h4:last-of-type {
+    margin-bottom: 40px;
+}
+
+section.last-section .details {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+footer {
+    color: #fff;
+    background-color: black;
+    padding: 50px 215px;
+    font-size: 14px
+}
+
+footer h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 4.2px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+footer ul li, footer p, footer span {
+    opacity: 60%;
+    line-height: 24px;
+}
+
+footer p {
+    margin: 20px 0;
+    max-width: 215px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    text-transform: uppercase;
+    padding: 5px 0 40px;
+}
+
+@media only screen and (max-width: 500px) {
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+    .line-container-one, .line-container-two, .line-container-three {
+        padding-left: 10px !important;
+    }
+    section .line::before, section .line-small::before {
+        width: 0;
+    }
+
+    footer {
+        padding: 50px;
+    }
+    footer ul, footer h2 {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
